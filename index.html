@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carlos Taracena - Acerca de mí</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: white;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ffc107;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .project-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+        }
+
+        .project-card h5 {
+            font-size: 1.3rem;
+            color: #ffc107;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .cert-icon {
+            color: #ffc107;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="#">Carlos Taracena</a>
+            <a class="navbar-brand" href="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Acerca de mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certifications">Certificaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#games">Videojuegos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="vh-100 d-flex align-items-center justify-content-center text-center bg-dark">
+        <div>
+            <h1 class="display-4 text-warning">¡Hola! Soy Carlos Taracena</h1>
+            <p class="lead">Programador Junior | Desarrollador Fullstack | Entusiasta de los videojuegos 🎮</p>
+            <a href="#about" class="btn btn-outline-warning btn-lg mt-3">Conóceme más</a>
+            <!-- Botón para descargar CV -->
+            <!-- <a href="CV_Carlos_Taracena.pdf" class="btn btn-warning btn-lg mt-3" download>
+                <i class="fas fa-file-download"></i> Descargar CV
+            </a> -->
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="container py-5">
+        <h2 class="text-warning">Acerca de mí</h2>
+        <p>
+            Soy desarrollador de software y páginas web con experiencia en servicios web (SOAP/REST), frameworks como
+            Laravel y Angular,
+            dominio de JavaScript y TypeScript, además de experiencia en Python, C#/.NET, Java y Android Studio.
+            Me apasiona el desarrollo de soluciones tecnológicas y también disfruto de los videojuegos.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="container py-5">
+        <h2 class="text-warning">Educación</h2>
+        <ul class="mt-3">
+            <li><strong>Ingeniería en Sistemas y Ciencias de la Computación</strong> – Universidad Mesoamericana (2023 –
+                Actualidad)</li>
+            <li><strong>Bachillerato en Computación</strong> – Colegio Santa Mónica (2021 – 2022)</li>
+        </ul>
+    </section>
+
+    <!-- CERTIFICACIONES -->
+    <section id="certifications" class="container py-5">
+        <h2 class="text-warning">Certificaciones</h2>
+        <ul class="mt-3">
+            <li><i class="fab fa-hackerrank cert-icon"></i> Python Development Certificate – HackerRank (2024)</li>
+            <li><i class="fab fa-hackerrank cert-icon"></i> C# Development Certificate – HackerRank (2024)</li>
+            <li><i class="fab fa-hackerrank cert-icon"></i> Software Engineer Certificate – HackerRank (2024)</li>
+            <li><i class="fas fa-network-wired cert-icon"></i> IoT Proficiency Certificate – CISCO (2022)</li>
+            <li><i class="fas fa-shield-alt cert-icon"></i> Cybersecurity Proficiency Certificate – CISCO (2022)</li>
+        </ul>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section id="games" class="container py-5">
+        <h2 class="text-warning text-center mb-4">Mis Videojuegos Favoritos</h2>
+        <div id="carouselGames" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/3/3a/Closed_Beta_Promo.jpg/revision/latest?cb=20200409115659"
+                        class="d-block mx-auto rounded" style="max-height:600px;" alt="Valorant">
+                    <p class="mt-3">Valorant</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="https://storage.googleapis.com/hrej2-cz/media/images/fh9xch9dn4qvfhi627aae57238b4585243068.jpg"
+                        class="d-block mx-auto rounded" style="max-height:600px;" alt="League of Legends">
+                    <p class="mt-3">League of Legends</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="https://images.squarespace-cdn.com/content/v1/606d4bb793879d12d807d4c8/1b547f53-e6f9-461e-b9df-0104e04726b5/new-bg.jpg"
+                        class="d-block mx-auto rounded" style="max-height:600px;" alt="Hollow Knight Silksong">
+                    <p class="mt-3">Hollow Knight: Silksong</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGames" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGames" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container py-5">
+        <h2 class="text-warning">Lenguajes & Habilidades</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>JavaScript / TypeScript</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 85%;">85%</div>
+                </div>
+                <p>Python</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 80%;">80%</div>
+                </div>
+                <p>C# / .NET</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p>Laravel / PHP</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 70%;">70%</div>
+                </div>
+                <p>Java (Spring)</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 65%;">65%</div>
+                </div>
+                <p>SQL / MySQL</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 80%;">80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container py-5">
+        <h2 class="text-warning">Proyectos Destacados</h2>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h5>🌐 Redes ISP con MikroTik</h5>
+                    <p>Configuración de WAN, LAN, QoS y documentación completa.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h5>💻 Aplicación Web con Laravel</h5>
+                    <p>Gestión de pedidos, inventario y APIs externas.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h5>🏨 Sistema de Reservas en C#</h5>
+                    <p>Gestión de datos con listas doblemente enlazadas.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="project-card">
+                    <h5>🌦️ Estación Meteorológica IoT</h5>
+                    <p>ESP32, sensores y análisis de datos con Python.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-center py-4">
+        <p>© 2025 Carlos Taracena</p>
+        <a href="https://www.linkedin.com/in/carlos-taracena-836512217/" class="text-warning me-3"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://github.com/Defiilol11" class="text-warning me-3"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://www.hackerrank.com/profile/carlitostaracen1" class="text-warning"><i
+                class="fab fa-hackerrank fa-lg"></i></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
